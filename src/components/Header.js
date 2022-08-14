@@ -1,18 +1,16 @@
+import Button from './Button'
+
 const Header = ({ title }) => {
+    const onClick = () => {
+        console.log('this is working')
+    }
+
     return (
         <header className="header">
             <h1>{title}</h1>
-            <button className="btn">Add</button>
+            <Button color='green' text='Add' onClick={onClick} />
         </header>
     )
 }
-
-
-
-// CSS inside of React
-// const headingStyle = {
-//     color: 'white',
-//     backgroundColor: 'black'
-// }
 
 export default Header
